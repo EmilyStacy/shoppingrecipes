@@ -1,0 +1,12 @@
+* {
+    margin:0;
+    padding:0;  
+}
+
+@media (max-width: 800px) {
+    body { 
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+

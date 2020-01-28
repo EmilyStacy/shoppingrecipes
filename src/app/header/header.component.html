@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<div class="navbar-header">
+  <a routerLink="/" class="navbar-brand">{{header}}</a>
+
+  <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
+	<span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+  </button>
+</div>
+<div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true"></div>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active"><a class="nav-link" href="#" (click) = "onSelect('recipe', $event)">Recipes<span class="sr-only">(current)</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="#" (click) = "onSelect('shopping-list', $event)"> Shopping List</a></li>
+
+
+      <li class="nav-item dropdown" >
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Data
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Save Data</a>
+          <a class="dropdown-item" href="#">Fetch Data</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+</nav>

@@ -1,0 +1,27 @@
+<div class="row">
+
+    <div class="col-sx-12 m-4">
+        <form>
+            <div class="row">
+                <div class="col-sm-5 form-group border-1">
+                    <label for = "name">Name</label> 
+                    <input type = "text" id ="name" class="form-contrl" placeholder="name" #nameInput/>
+                </div>
+                <div class="col-sm-2 form-group ">
+                    <label for = "amount">Amount</label> 
+                    <input type = "number" id ="amount" class="form-contrl" placeholder="amount" #amountInput/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 m-4 ">
+                    <button class="btn btn-success p-2 m-1" (click)="onAddIngredient()">Add</button>
+                    <button class="btn btn-danger p-2 m-1">Delete</button>
+                    <button class="btn btn-primary p-2 m-1">Clear</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    </div>
